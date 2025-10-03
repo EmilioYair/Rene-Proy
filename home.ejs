@@ -17,23 +17,21 @@
 
 <ul>
 <% artistas.forEach((artista) => { %>
+
     <li><%= artista %></li>
+
 <% }); %>
 </ul>
 
 <table class="table table-bordered">
-    <thead class="thead-dark">
-        <tr>
-            <th scope="col">Artistas</th>
-        </tr>
-    </thead>
-    <tbody>
-        <% artistas.forEach((artista) => { %>
-        <tr>
-            <td><%= artista %></td>
-        </tr>
-        <% }); %>
-    </tbody>
+<th>Artistas</th>
+<% artistas.forEach((artista) => { %>
+	
+    <tr>		
+        <td><%= artista %></td>
+    </tr>
+<% }); %>
 </table>
+
 
 <%- include("templates/footer.ejs") %>
